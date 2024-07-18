@@ -17,7 +17,7 @@ jobs:
           registry-url: https://registry.npmjs.org
 
       - name: Install dependencies
-        run: npm install
+        run: npm install --unsafe-perm
 
       - name: Publish
         uses: lannonbr/vsce-action@master

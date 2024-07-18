@@ -7,14 +7,19 @@ jobs:
     name: Publish
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
-    - name: Install
-      uses: actions/npm@master
-      with:
-        args: install --unsafe-perm
-    - name: Publish
-      uses: lannonbr/vsce-action@master
-      env:
-        VSCE_TOKEN: ${{ secrets.VSCE_TOKEN }}
-      with:
-        args: publish -p $VSCE_TOKEN
+      - uses: actions/checkout@master
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "18.20.3"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Publish
+        uses: lannonbr/vsce-action@master
+        env:
+          VSCE_TOKEN: ${{ secrets.VSCE_TOKEN }}
+        with:
+          args: publish -p $VSCE_TOKEN

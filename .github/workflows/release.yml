@@ -1,20 +1,24 @@
 on:
   release:
     types: [published]
+  push:
+    branches: [master]
+
 name: Deploy Extension
 jobs:
   Publish:
     name: Publish
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v2
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
+      - name: Use Node.js 18.x
+        uses: actions/setup-node@v2
         with:
-          node-version: "18.20.3"
-          cache: npm
-          registry-url: https://registry.npmjs.org
+          node-version: "18"
+
+      - name: Install build tools
+        run: sudo apt-get install -y build-essential
 
       - name: Install dependencies
         run: npm install --unsafe-perm

@@ -1,4 +1,4 @@
-# Vscode Google Translate
+# Vscode Google Translate Next
 
 [![Licence](https://img.shields.io/github/license/funkyremi/vscode-google-translate.svg)](https://github.com/funkyremi/vscode-google-translate)
 ![VS Code Marketplace](https://vsmarketplacebadge.apphb.com/version-short/funkyremi.vscode-google-translate.svg) ![Rating](https://vsmarketplacebadge.apphb.com/rating-short/funkyremi.vscode-google-translate.svg)
@@ -53,6 +53,7 @@ If you want to make changes to the code hovering translations. Please run "npm r
 part of the codebase.
 
 Many thanks to the people who participate for making it awesome!
+
 ## Show your support
 
 **Give five stars 🤩**

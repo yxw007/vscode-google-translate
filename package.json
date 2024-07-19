@@ -1,8 +1,8 @@
 {
-    "name": "vscode-google-translate-v2",
+    "name": "vscode-google-translate-next",
     "displayName": "Vscode Google Translate",
     "description": "Translate text right in your code",
-    "publisher": "Potter<aa4790139@gmail.com>",
+    "publisher": "potter",
     "author": {
         "name": "funkyremi"
     },

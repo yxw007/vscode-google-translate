@@ -1,6 +1,6 @@
 {
-    "name": "vscode-google-translate-next",
-    "displayName": "Vscode Google Translate Next",
+    "name": "google-translate-next",
+    "displayName": "Google Translate Next",
     "description": "Translate text right in your code",
     "publisher": "potter",
     "author": {
@@ -44,7 +44,7 @@
             }
         ],
         "configuration": {
-            "title": "Vscode Google Translate Next",
+            "title": "Google Translate Next",
             "type": "object",
             "properties": {
                 "vscodeGoogleTranslate.preferredLanguage": {

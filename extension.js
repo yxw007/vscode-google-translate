@@ -120,8 +120,16 @@ function getTranslationPromise(selectedText, selectedLanguage, selection) {
 					// We can try to split the string into parts, then translate again. Then return it to a
 					// camel style casing
 					if (res.data[0] === selectedText) {
+
+						let decoration = window.createTextEditorDecorationType({
+							color: '#FF2D00',
+							backgroundColor: "transparent"
+						});
+						editor.setDecorations(decoration, selection);
+
 						translate(humanizeString(selectedText), translationConfiguration).then((res) => {
 							if (!!res && !!res.data) {
+								decoration.dispose();
 								resolve(
 									/** @type {TranslateRes} */ {
 										selection,
@@ -129,9 +137,11 @@ function getTranslationPromise(selectedText, selectedLanguage, selection) {
 									}
 								);
 							} else {
+								decoration.dispose();
 								reject(new Error("Google Translation API issue"));
 							}
 						});
+
 					} else {
 						resolve(
 							/** @type {TranslateRes} */ {

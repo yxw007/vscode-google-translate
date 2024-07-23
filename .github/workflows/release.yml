@@ -1,8 +1,14 @@
 on:
-  release:
-    types: [published]
   push:
     branches: [master]
+
+permissions:
+  id-token: write
+  contents: write
+  pull-requests: write
+
+env:
+  skip: false
 
 name: Deploy Extension
 jobs:
@@ -23,8 +29,37 @@ jobs:
       - name: Install dependencies
         run: npm install --unsafe-perm
 
+      - name: Compare tag with package.json version
+        run: |
+          closest_tag=$(git describe --tags --exact-match 2>/dev/null || echo "")
+          echo "Closest tag: $closest_tag"
+          if [ "$closest_tag" != "" ]; then
+            echo "skip=true" >> $GITHUB_ENV
+          else
+            echo "skip=false" >> $GITHUB_ENV
+          fi
+
+      - name: Output skip
+        run: |
+          echo "skip: $skip"
+
+        # skip = true means skip steps below
+      - name: Generate Changelog and Create Release
+        if: env.skip == 'false'
+        env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+        run: |
+          npm run release --no-git-checks
+
+      - uses: ad-m/github-push-action@v0.6.0
+        if: env.skip == 'false'
+        with:
+          github_token: ${{ secrets.TOKEN }}
+          branch: master
+
       - name: Publish
         uses: lannonbr/vsce-action@master
+        if: env.skip == 'false'
         env:
           VSCE_TOKEN: ${{ secrets.VSCE_TOKEN }}
         with:

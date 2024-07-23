@@ -1,5 +1,7 @@
 # Vscode Google Translate Next
 
+English | [简体中文](./README_zh-CN.md)
+
 [![Licence](https://img.shields.io/github/license/yxw007/vscode-google-translate.svg)](https://github.com/yxw007/vscode-google-translate)
 
 Quickly translate text right in your code 🚀
@@ -53,9 +55,6 @@ part of the codebase.
 
 Many thanks to the people who participate for making it awesome!
 
-## Show your support
+## Special Thanks
 
-**Give five stars 🤩**
-
-If you like it, [rate it](https://marketplace.visualstudio.com/items?itemName=funkyremi.vscode-google-translate&ssr=false#review-details)
-
+- [funkyremi/vscode-google-translate](https://github.com/funkyremi/vscode-google-translate)

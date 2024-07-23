@@ -113,6 +113,13 @@ function getTranslationPromise(selectedText, selectedLanguage, selection) {
 				};
 			}
 		}
+
+		let decoration = vscode.window.createTextEditorDecorationType({
+			color: '#FF2D00',
+			backgroundColor: "transparent"
+		});
+		vscode.window.activeTextEditor.setDecorations(decoration, [selection]);
+
 		translate(selectedText, translationConfiguration)
 			.then((res) => {
 				if (!!res && !!res.data) {
@@ -132,6 +139,7 @@ function getTranslationPromise(selectedText, selectedLanguage, selection) {
 								reject(new Error("Google Translation API issue"));
 							}
 						});
+
 					} else {
 						resolve(
 							/** @type {TranslateRes} */ {
@@ -143,8 +151,12 @@ function getTranslationPromise(selectedText, selectedLanguage, selection) {
 				} else {
 					reject(new Error("Google Translation API issue"));
 				}
+				decoration.dispose();
 			})
-			.catch((e) => reject(new Error("Google Translation API issue: " + e.message)));
+			.catch((e) => {
+				reject(new Error("Google Translation API issue: " + e.message))
+				decoration.dispose();
+			});
 	});
 }
 

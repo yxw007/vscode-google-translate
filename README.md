@@ -58,3 +58,4 @@ Many thanks to the people who participate for making it awesome!
 **Give five stars 🤩**
 
 If you like it, [rate it](https://marketplace.visualstudio.com/items?itemName=funkyremi.vscode-google-translate&ssr=false#review-details)
+

@@ -57,6 +57,11 @@ jobs:
         run: |
           npm run release --no-git-checks
 
+      - name: Commit changes
+        if: env.skip == 'false'
+        run: |
+          git diff --quiet || git commit -am "chore: auto update for release"
+
       - uses: ad-m/github-push-action@v0.6.0
         if: env.skip == 'false'
         with:

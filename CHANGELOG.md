@@ -1,6 +1,19 @@
 # Changelog
 
 
+## v2.0.2
+
+[compare changes](https://github.com/yxw007/vscode-google-translate/compare/v2.0.1...v2.0.2)
+
+### 🏡 Chore
+
+- **release:** V2.0.1 ([fb1cff6](https://github.com/yxw007/vscode-google-translate/commit/fb1cff6))
+- Every time showInfo pops up, it feels a bit awkward, so let's change it to statusBarMessage ([8c79139](https://github.com/yxw007/vscode-google-translate/commit/8c79139))
+
+### ❤️ Contributors
+
+- Potter ([@artipub](http://github.com/artipub))
+
 ## v2.0.1
 
 

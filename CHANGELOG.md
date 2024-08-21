@@ -1,5 +1,16 @@
 # Changelog
 
+## v2.0.3
+
+
+### 🏡 Chore
+
+- **release:** V2.0.2 ([55ccbd9](https://github.com/yxw007/vscode-google-translate/commit/55ccbd9))
+
+### ❤️ Contributors
+
+- Potter ([@artipub](http://github.com/artipub))
+
 ## v2.0.2
 
 [compare changes](https://github.com/yxw007/vscode-google-translate/compare/v2.0.1...v2.0.2)

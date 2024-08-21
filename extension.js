@@ -462,7 +462,7 @@ async function activate(context) {
 			}
 			return null;
 		});
-		vscode.window.showInformationMessage(`${pkg.name} extension is now active !`);
+		vscode.window.setStatusBarMessage(`${pkg.name} extension is now active !`, 5000);
 	} catch (error) {
 		vscode.window.showInformationMessage(`${pkg.name} extension active failed ! error:`, err);
 	}

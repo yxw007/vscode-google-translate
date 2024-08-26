@@ -67,11 +67,10 @@ jobs:
         with:
           github_token: ${{ secrets.TOKEN }}
           branch: master
-
-      - name: Publish
-        uses: lannonbr/vsce-action@master
+          
+      - name: Publish to Visual Studio Marketplace
         if: env.skip == 'false'
-        env:
-          VSCE_TOKEN: ${{ secrets.VSCE_TOKEN }}
+        uses: HaaLeo/publish-vscode-extension@v1
         with:
-          args: publish -p $VSCE_TOKEN
+          pat: ${{ secrets.VSCE_TOKEN }}
+          registryUrl: https://marketplace.visualstudio.com

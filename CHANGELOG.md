@@ -1,5 +1,16 @@
 # Changelog
 
+## v2.0.4
+
+
+### 🩹 Fixes
+
+- **build:** ReferenceError: ReadableStream is not defined ([e77354a](https://github.com/yxw007/vscode-google-translate/commit/e77354a))
+
+### ❤️ Contributors
+
+- Potter ([@artipub](http://github.com/artipub))
+
 ## v2.0.3
 
 

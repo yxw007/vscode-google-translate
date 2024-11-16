@@ -1,5 +1,19 @@
 # Changelog
 
+## v2.0.5
+
+[compare changes](https://github.com/yxw007/vscode-translate-next/compare/v2.0.4...v2.0.5)
+
+### 🏡 Chore
+
+- **release:** V2.0.4 ([3d8ccf8](https://github.com/yxw007/vscode-translate-next/commit/3d8ccf8))
+- Auto update for release ([2413f8f](https://github.com/yxw007/vscode-translate-next/commit/2413f8f))
+- Update plugin information and provide replacement plugin link ([7df7d7d](https://github.com/yxw007/vscode-translate-next/commit/7df7d7d))
+
+### ❤️ Contributors
+
+- Potter ([@yxw007](http://github.com/yxw007))
+
 ## v2.0.4
 
 

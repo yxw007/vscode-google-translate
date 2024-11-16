@@ -1,6 +1,6 @@
 {
-    "name": "translate-next",
-    "displayName": "Translate Next",
+    "name": "google-translate-next",
+    "displayName": "Google Translate Next",
     "description": "Translate text right in your code",
     "publisher": "yxw007",
     "author": {
@@ -11,7 +11,7 @@
     "icon": "icon.png",
     "repository": {
         "type": "git",
-        "url": "https://github.com/yxw007/vscode-translate-next.git"
+        "url": "https://github.com/yxw007/vscode-google-translate.git"
     },
     "categories": [
         "Formatters"

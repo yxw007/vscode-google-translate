@@ -4,6 +4,8 @@ English | [简体中文](./README_zh-CN.md)
 
 [![Licence](https://img.shields.io/github/license/yxw007/vscode-google-translate.svg)](https://github.com/yxw007/vscode-google-translate)
 
+<h1 style="color:red">Special Note: This plugin will not be updated anymore, please use our newly developed plugin: <a href="https://github.com/yxw007/vscode-translate-next">vscode-translate-next</a>, which provides more features and better user experience. it provides more functions and better user experience, perfect replacement for vscode-google-translate</h1>.
+
 Quickly translate text right in your code 🚀
 
 ![Demo](demo.gif)

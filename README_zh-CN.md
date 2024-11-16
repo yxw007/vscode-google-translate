@@ -4,7 +4,11 @@
 
 [![Licence](https://img.shields.io/github/license/yxw007/vscode-google-translate.svg)](https://github.com/yxw007/vscode-google-translate)
 
+<h1 style="color:red">特别说明：此插件将不再更新，请使用我们全新开发的插件: <a href="https://github.com/yxw007/vscode-translate-next">vscode-translate-next</a>，它提供了更多功能和更好的用户体验，完美替代vscode-google-translate</h1>
+
+
 快速在您的代码中翻译文本 🚀
+
 
 ![Demo](demo.gif)
 

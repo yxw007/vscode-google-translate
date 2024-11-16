@@ -350,7 +350,6 @@ async function activate(context) {
 					});
 			}
 		);
-
 		context.subscriptions.push(translateLinesUnderCursor);
 
 		const translateLinesUnderCursorPreferred = vscode.commands.registerCommand(
@@ -467,6 +466,7 @@ async function activate(context) {
 		vscode.window.showInformationMessage(`${pkg.name} extension active failed ! error:`, err);
 	}
 }
+
 exports.activate = activate;
 
 /**
@@ -482,4 +482,5 @@ function deactivate() {
 	}
 	return client.stop();
 }
+
 exports.deactivate = deactivate;

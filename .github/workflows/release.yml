@@ -50,24 +50,24 @@ jobs:
           echo "skip: $skip"
 
         # skip = true means skip steps below
-      - name: Generate Changelog and Create Release
-        if: env.skip == 'false'
-        env:
-          GITHUB_TOKEN: ${{ secrets.TOKEN }}
-        run: |
-          npm run release --no-git-checks
+      # - name: Generate Changelog and Create Release
+      #   if: env.skip == 'false'
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.TOKEN }}
+      #   run: |
+      #     npm run release --no-git-checks
 
-      - name: Commit changes
-        if: env.skip == 'false'
-        run: |
-          git diff --quiet || git commit -am "chore: auto update for release"
+      # - name: Commit changes
+      #   if: env.skip == 'false'
+      #   run: |
+      #     git diff --quiet || git commit -am "chore: auto update for release"
 
-      - uses: ad-m/github-push-action@v0.6.0
-        if: env.skip == 'false'
-        with:
-          github_token: ${{ secrets.TOKEN }}
-          branch: master
-          
+      # - uses: ad-m/github-push-action@v0.6.0
+      #   if: env.skip == 'false'
+      #   with:
+      #     github_token: ${{ secrets.TOKEN }}
+      #     branch: master
+
       - name: Publish to Visual Studio Marketplace
         if: env.skip == 'false'
         uses: HaaLeo/publish-vscode-extension@v1

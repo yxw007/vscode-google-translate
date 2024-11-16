@@ -1,5 +1,17 @@
 # Changelog
 
+## v2.0.7
+
+[compare changes](https://github.com/yxw007/vscode-google-translate/compare/v2.0.6...v2.0.7)
+
+### 🏡 Chore
+
+- Deprecate package.json ([c84ef23](https://github.com/yxw007/vscode-google-translate/commit/c84ef23))
+
+### ❤️ Contributors
+
+- Potter <75838259@qq.com>
+
 ## v2.0.6
 
 [compare changes](https://github.com/yxw007/vscode-google-translate/compare/v2.0.5...v2.0.6)

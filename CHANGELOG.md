@@ -1,5 +1,20 @@
 # Changelog
 
+## v2.0.6
+
+[compare changes](https://github.com/yxw007/vscode-google-translate/compare/v2.0.5...v2.0.6)
+
+### 🏡 Chore
+
+- Comment out unused steps in release workflow ([fd64a1b](https://github.com/yxw007/vscode-google-translate/commit/fd64a1b))
+- Update README.md ([cfeceac](https://github.com/yxw007/vscode-google-translate/commit/cfeceac))
+- Update plugin name and repository URL ([0f4aa65](https://github.com/yxw007/vscode-google-translate/commit/0f4aa65))
+
+### ❤️ Contributors
+
+- Potter <75838259@qq.com>
+- FreeCoderX ([@yxw007](http://github.com/yxw007))
+
 ## v2.0.5
 
 [compare changes](https://github.com/yxw007/vscode-translate-next/compare/v2.0.4...v2.0.5)
